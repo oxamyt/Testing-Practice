@@ -16,5 +16,7 @@ test("calculator basic operations, add, subtract,divide,multiply", () => {
 });
 
 test("caesar cipher", () => {
-  expect(caesarCipher("*kjASD,ZZdz.j&&dsa")).toBe("*nmDVG,CCgc.m&&gvd");
+  expect(caesarCipher("I love my new puppy, she`s so adorable.", 3)).toBe(
+    "L oryh pb qhz sxssb, vkh`v vr dgrudeoh."
+  );
 });
