@@ -1,4 +1,10 @@
-import { capitalize, reverse, calculator, caesarCipher } from "./funcs";
+import {
+  capitalize,
+  reverse,
+  calculator,
+  caesarCipher,
+  analyzeArray,
+} from "./funcs";
 
 test("return first character capitalized", () => {
   expect(capitalize("banana")).toBe("Banana");
@@ -19,4 +25,13 @@ test("caesar cipher", () => {
   expect(caesarCipher("I love my new puppy, she`s so adorable.", 3)).toBe(
     "L oryh pb qhz sxssb, vkh`v vr dgrudeoh."
   );
+});
+
+test("analyzing array", () => {
+  const object = analyzeArray([1, 8, 3, 4, 2, 6]);
+  console.log(object);
+  expect(object.min).toBe(1);
+  expect(object.max).toBe(8);
+  expect(object.average).toBe(4);
+  expect(object.length).toBe(6);
 });
